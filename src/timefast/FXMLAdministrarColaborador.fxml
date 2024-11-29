@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="657.0" prefWidth="802.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="timefast.FXMLAdministrarColaboradorController">
+   <children>
+      <Label layoutX="64.0" layoutY="49.0" text="Modulo de Colaboradores">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="85.0" text="Gestiona los colaboradores de Time-Fast" />
+      <Button layoutX="48.0" layoutY="132.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="344.0" text="Registrar" />
+      <Button layoutX="418.0" layoutY="132.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="344.0" text="Administrar" />
+      <TextField layoutX="48.0" layoutY="191.0" prefHeight="31.0" prefWidth="387.0" text="Buscar por nombre, numero de personal o rol" />
+      <Label layoutX="77.0" layoutY="283.0" text="Foto" />
+      <Label layoutX="158.0" layoutY="283.0" text="Nombre Completo" />
+      <Label layoutX="333.0" layoutY="283.0" text="Numero de Personal" />
+      <Label layoutX="528.0" layoutY="283.0" text="Rol" />
+      <Label layoutX="653.0" layoutY="283.0" text="Acciones" />
+      <Button layoutX="615.0" layoutY="322.0" mnemonicParsing="false" text="Editar" />
+      <Button layoutX="689.0" layoutY="322.0" mnemonicParsing="false" text="Eliminar" textFill="#e10707" />
+      <TextField layoutX="146.0" layoutY="322.0" prefHeight="31.0" prefWidth="149.0" />
+      <TextField layoutX="325.0" layoutY="322.0" prefHeight="31.0" prefWidth="149.0" />
+      <TextField layoutX="490.0" layoutY="322.0" prefHeight="31.0" prefWidth="99.0" />
+      <TextField layoutX="146.0" layoutY="381.0" prefHeight="31.0" prefWidth="149.0" />
+      <TextField layoutX="325.0" layoutY="381.0" prefHeight="31.0" prefWidth="149.0" />
+      <TextField layoutX="490.0" layoutY="381.0" prefHeight="31.0" prefWidth="99.0" />
+      <TextField layoutX="146.0" layoutY="440.0" prefHeight="31.0" prefWidth="149.0" />
+      <TextField layoutX="325.0" layoutY="440.0" prefHeight="31.0" prefWidth="149.0" />
+      <TextField layoutX="490.0" layoutY="440.0" prefHeight="31.0" prefWidth="99.0" />
+      <Button layoutX="612.0" layoutY="381.0" mnemonicParsing="false" text="Editar" />
+      <Button layoutX="612.0" layoutY="440.0" mnemonicParsing="false" text="Editar" />
+      <Button layoutX="689.0" layoutY="381.0" mnemonicParsing="false" text="Eliminar" textFill="#e10e0e" />
+      <Button layoutX="689.0" layoutY="440.0" mnemonicParsing="false" text="Eliminar" textFill="#eb0a0a" />
+   </children>
+</AnchorPane>
