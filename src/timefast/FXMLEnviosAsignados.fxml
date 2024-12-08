@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="710.0" prefWidth="536.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="timefast.FXMLEnviosAsignadosController">
+   <children>
+      <Pane layoutY="4.0" prefHeight="705.0" prefWidth="528.0">
+         <children>
+            <Label layoutX="56.0" layoutY="14.0" text="Bienvenido, Conductor">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="56.0" layoutY="81.0" text="Envios Asignados">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="56.0" layoutY="151.0" prefHeight="31.0" prefWidth="317.0" text="GU001" />
+            <TextField layoutX="56.0" layoutY="243.0" prefHeight="31.0" prefWidth="317.0" text="GU002" />
+            <TextField layoutX="56.0" layoutY="326.0" prefHeight="31.0" prefWidth="317.0" text="GU003" />
+            <Label layoutX="56.0" layoutY="417.0" text="Plaza 789, Ciudad C" />
+            <Label layoutX="398.0" layoutY="156.0" text="En tránsito" textFill="#2a05e4" />
+            <Label layoutX="398.0" layoutY="248.0" text="Detenido" textFill="#f50202" />
+            <Label layoutX="398.0" layoutY="331.0" text="Entregado" textFill="#0fb21c" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="763.0" prefWidth="757.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="timefast.FXMLModuloEnviosController">
+   <children>
+      <Label layoutX="53.0" layoutY="37.0" text="Modulo de Envios">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="81.0" text="Gestiona los envios de Time - Fast" />
+      <Button layoutX="53.0" layoutY="116.0" mnemonicParsing="false" text="Crear Envio" />
+      <Button layoutX="166.0" layoutY="116.0" mnemonicParsing="false" text="Consultar Envio" />
+      <Label layoutX="53.0" layoutY="183.0" text="Cliente" />
+      <Label layoutX="330.0" layoutY="183.0" text="Costo" />
+      <TextField layoutX="53.0" layoutY="204.0" />
+      <TextField layoutX="330.0" layoutY="204.0" />
+      <Label layoutX="53.0" layoutY="260.0" text="Origen" />
+      <Label layoutX="53.0" layoutY="454.0" text="Destino" />
+      <TextField layoutX="53.0" layoutY="281.0" text="Calle" />
+      <TextField layoutX="53.0" layoutY="329.0" text="Colonia" />
+      <TextField layoutX="53.0" layoutY="382.0" text="Ciudad" />
+      <TextField layoutX="330.0" layoutY="281.0" text="Numero" />
+      <TextField layoutX="330.0" layoutY="329.0" text="Codigo Postal" />
+      <TextField layoutX="330.0" layoutY="382.0" text="Estado" />
+      <TextField layoutX="53.0" layoutY="483.0" text="Calle" />
+      <TextField layoutX="53.0" layoutY="526.0" text="Colonia" />
+      <TextField layoutX="53.0" layoutY="569.0" text="Ciudad" />
+      <TextField layoutX="330.0" layoutY="483.0" text="Numero" />
+      <TextField layoutX="330.0" layoutY="526.0" text="Codigo Postal" />
+      <TextField layoutX="330.0" layoutY="569.0" text="Estado" />
+      <Button layoutX="53.0" layoutY="659.0" mnemonicParsing="false" text="Crear Envio" />
+   </children>
+</AnchorPane>
