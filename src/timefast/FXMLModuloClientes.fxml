@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="836.0" prefWidth="843.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="timefast.FXMLModuloClientesController">
+   <children>
+      <Pane layoutY="-2.0" prefHeight="838.0" prefWidth="844.0" style="-fx-background-color: teal;">
+         <children>
+            <Label layoutX="31.0" layoutY="40.0" text="Modulo de Clientes">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="76.0" text="Gestiona los clientes de Time-Fast">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnAgregar" layoutX="139.0" layoutY="181.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="149.0" text="Registro" />
+            <Button fx:id="btnEditar" layoutX="139.0" layoutY="252.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="149.0" text="Editar" />
+            <Button fx:id="btnEliminar" layoutX="558.0" layoutY="252.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="149.0" text="Eliminar" />
+            <Button fx:id="btnRefrescar" layoutX="558.0" layoutY="181.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="149.0" text="Búsqueda" />
+            <Label layoutX="53.0" layoutY="346.0" text="Nombre" />
+            <Label layoutX="50.0" layoutY="434.0" text="Apellido Materno" />
+            <Label layoutX="53.0" layoutY="520.0" text="Numero" />
+            <Label layoutX="50.0" layoutY="616.0" text="Codigo Postal" />
+            <Label layoutX="53.0" layoutY="711.0" text="Correo Electronico" />
+            <Label layoutX="495.0" layoutY="346.0" text="Apellido Paterno" />
+            <Label layoutX="494.0" layoutY="434.0" text="Calle" />
+            <Label layoutX="494.0" layoutY="520.0" text="Colonia" />
+            <Label layoutX="497.0" layoutY="616.0" text="Telefono" />
+            <TextField layoutX="53.0" layoutY="378.0" prefHeight="31.0" prefWidth="274.0" />
+            <TextField layoutX="50.0" layoutY="468.0" prefHeight="31.0" prefWidth="274.0" />
+            <TextField layoutX="50.0" layoutY="556.0" prefHeight="31.0" prefWidth="274.0" />
+            <TextField layoutX="50.0" layoutY="649.0" prefHeight="31.0" prefWidth="274.0" />
+            <TextField layoutX="50.0" layoutY="741.0" prefHeight="31.0" prefWidth="274.0" />
+            <TextField layoutX="496.0" layoutY="378.0" prefHeight="31.0" prefWidth="274.0" />
+            <TextField layoutX="496.0" layoutY="468.0" prefHeight="31.0" prefWidth="274.0" />
+            <TextField layoutX="496.0" layoutY="556.0" prefHeight="31.0" prefWidth="274.0" />
+            <TextField layoutX="496.0" layoutY="649.0" prefHeight="31.0" prefWidth="274.0" />
+            <Button layoutX="569.0" layoutY="741.0" mnemonicParsing="false" text="Registrar Cliente" />
+            <ImageView fitHeight="176.0" fitWidth="188.0" layoutX="334.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../media/diversidad.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
