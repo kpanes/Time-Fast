@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="786.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="timefast.FXMLModuloUnidadesController">
+   <children>
+      <Pane prefHeight="785.0" prefWidth="851.0" style="-fx-background-color: moccasin;">
+         <children>
+            <Label layoutX="62.0" layoutY="29.0" text="Modulo de Unidades">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="65.0" text="Gestiona las unidades de transporte de Time-Fast" />
+            <Button layoutX="46.0" layoutY="276.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="328.0" text="Registro" />
+            <Button layoutX="451.0" layoutY="276.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="328.0" text="Administrar" />
+            <Label layoutX="55.0" layoutY="353.0" text="Marca" />
+            <Label layoutX="62.0" layoutY="440.0" text="Año" />
+            <Label layoutX="60.0" layoutY="539.0" text="Tipo de Unidad" />
+            <Label layoutX="469.0" layoutY="353.0" text="Modelo" />
+            <Label layoutX="472.0" layoutY="440.0" text="VIN" />
+            <TextField layoutX="55.0" layoutY="386.0" prefHeight="31.0" prefWidth="218.0" />
+            <TextField layoutX="55.0" layoutY="474.0" prefHeight="31.0" prefWidth="218.0" />
+            <TextField layoutX="469.0" layoutY="386.0" prefHeight="31.0" prefWidth="218.0" />
+            <TextField layoutX="469.0" layoutY="474.0" prefHeight="31.0" prefWidth="218.0" />
+            <SplitMenuButton layoutX="62.0" layoutY="570.0" mnemonicParsing="false" text="Selecciona un tipo">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </SplitMenuButton>
+            <Button layoutX="337.0" layoutY="658.0" mnemonicParsing="false" text="+ Registrar Unidad" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="334.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../media/carros.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
