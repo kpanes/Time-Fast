@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="671.0" prefWidth="495.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="timefast.FXMLActualizarPerfilController">
+   <children>
+      <Pane layoutX="14.0" layoutY="13.0" prefHeight="646.0" prefWidth="467.0" style="-fx-background-color: #9ebec5;">
+         <children>
+            <Label layoutX="148.0" layoutY="22.0" text="Actualizar Perfil">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField layoutX="75.0" layoutY="255.0" prefHeight="31.0" prefWidth="335.0" text="Nombre Completo" />
+            <TextField layoutX="75.0" layoutY="315.0" prefHeight="31.0" prefWidth="335.0" text="Correo Electronico" />
+            <TextField layoutX="75.0" layoutY="378.0" prefHeight="31.0" prefWidth="335.0" text="Teléfono" />
+            <TextField layoutX="75.0" layoutY="438.0" prefHeight="31.0" prefWidth="335.0" text="Direccion" />
+            <Button layoutX="180.0" layoutY="502.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="125.0" text="Actualizar Perfil" />
+            <Label layoutX="75.0" layoutY="567.0" text="¿Deseas cambiar tu contraseña?" />
+            <Hyperlink layoutX="286.0" layoutY="563.0" text="Haz clic aqui" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="158.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../media/persona.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
