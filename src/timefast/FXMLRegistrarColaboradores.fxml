@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="829.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="timefast.FXMLRegistrarColaboradoresController">
+   <children>
+      <Pane prefHeight="829.0" prefWidth="875.0" style="-fx-background-color: moccasin;">
+         <children>
+            <Label layoutX="34.0" layoutY="34.0" text="Modulo de Colaboradores">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="70.0" text="Gestiona los colaboradores de Time - Fast" />
+            <Button fx:id="tbnRegistrar" layoutX="466.0" layoutY="145.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="306.0" text="Registrar" />
+            <Button fx:id="btnAdministrar" layoutX="466.0" layoutY="219.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="306.0" text="Administrar" />
+            <Label layoutX="97.0" layoutY="308.0" text="Nombre" />
+            <Label layoutX="94.0" layoutY="390.0" text="Apellido Materno" />
+            <Label layoutX="97.0" layoutY="479.0" text="Email" />
+            <Label layoutX="95.0" layoutY="560.0" text="Contraseña" />
+            <Label layoutX="90.0" layoutY="644.0" text="Fotografia" />
+            <Label layoutX="476.0" layoutY="308.0" text="Apellido Paterno" />
+            <Label layoutX="476.0" layoutY="390.0" text="CURP" />
+            <Label layoutX="476.0" layoutY="479.0" text="Numero de Personal" />
+            <Label layoutX="476.0" layoutY="560.0" text="Rol" />
+            <TextField layoutX="92.0" layoutY="340.0" prefHeight="31.0" prefWidth="306.0" />
+            <TextField layoutX="92.0" layoutY="422.0" prefHeight="31.0" prefWidth="306.0" />
+            <TextField layoutX="92.0" layoutY="508.0" prefHeight="31.0" prefWidth="306.0" />
+            <PasswordField layoutX="92.0" layoutY="588.0" prefHeight="31.0" prefWidth="306.0" />
+            <TextField layoutX="476.0" layoutY="340.0" prefHeight="31.0" prefWidth="306.0" />
+            <TextField layoutX="476.0" layoutY="422.0" prefHeight="31.0" prefWidth="306.0" />
+            <TextField layoutX="476.0" layoutY="508.0" prefHeight="31.0" prefWidth="306.0" />
+            <SplitMenuButton layoutX="476.0" layoutY="588.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="184.0" text="Elige una opcion">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </SplitMenuButton>
+            <Button fx:id="btnGuardar" layoutX="347.0" layoutY="728.0" mnemonicParsing="false" text="Guardar Colaborador" />
+            <ChoiceBox layoutX="95.0" layoutY="676.0" prefWidth="150.0" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="225.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../media/colaborativo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
