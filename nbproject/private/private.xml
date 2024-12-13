@@ -3,17 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/kevin/Desktop/TimeFast/src/timefast/FXMLAdministrarColaboradorController.java</file>
-            <file>file:/C:/Users/kevin/Desktop/TimeFast/src/timefast/FXMLModuloUnidadesController.java</file>
-            <file>file:/C:/Users/kevin/Desktop/TimeFast/src/timefast/FXMLAdministrarColaborador.fxml</file>
-            <file>file:/C:/Users/kevin/Desktop/TimeFast/src/timefast/FXMLModuloClientesController.java</file>
-            <file>file:/C:/Users/kevin/Desktop/TimeFast/src/timefast/FXMLInicioSesion.fxml</file>
-            <file>file:/C:/Users/kevin/Desktop/TimeFast/src/timefast/FXMLModuloUnidades.fxml</file>
-            <file>file:/C:/Users/kevin/Desktop/TimeFast/src/timefast/FXMLModuloClientes.fxml</file>
-            <file>file:/C:/Users/kevin/Desktop/TimeFast/src/timefast/TimeFast.java</file>
-            <file>file:/C:/Users/kevin/Desktop/TimeFast/src/timefast/FXMLRegistrarColaboradores.fxml</file>
-            <file>file:/C:/Users/kevin/Desktop/TimeFast/src/timefast/FXMLRegistrarColaboradoresController.java</file>
-            <file>file:/C:/Users/kevin/Desktop/TimeFast/src/timefast/FXMLInicioSesionController.java</file>
+            <file>file:/D:/Documentos/GitHub/Time-Fast-Escritorio-MIO/src/timefast/FXMLAdministrarColaboradorController.java</file>
+            <file>file:/D:/Documentos/GitHub/Time-Fast-Escritorio-MIO/src/timefast/FXMLAdminClientes.fxml</file>
+            <file>file:/D:/Documentos/GitHub/Time-Fast-Escritorio-MIO/src/modelo/pojo/RespuestaHTTP.java</file>
+            <file>file:/D:/Documentos/GitHub/Time-Fast-Escritorio-MIO/src/modelo/dao/ColaboradorDAO.java</file>
+            <file>file:/D:/Documentos/GitHub/Time-Fast-Escritorio-MIO/src/timefast/FXMLFormularioColaboradoresController.java</file>
         </group>
     </open-files>
 </project-private>

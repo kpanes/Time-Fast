@@ -7,14 +7,35 @@ package timefast;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
  *
- * @author kevin
+ * @author eduar
  */
 public class FXMLFormularioPaquetesController implements Initializable {
+
+    @FXML
+    private TextField tfPeso;
+    @FXML
+    private TextField tfAlto;
+    @FXML
+    private TextField tfAncho;
+    @FXML
+    private TextField tfProfundidad;
+    @FXML
+    private Label lbErrorPeso;
+    @FXML
+    private Label lbErrorAlto;
+    @FXML
+    private Label lbErrorAncho;
+    @FXML
+    private Label lbErrorProfundidad;
 
     /**
      * Initializes the controller class.
@@ -23,5 +44,9 @@ public class FXMLFormularioPaquetesController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @FXML
+    private void Guardar(ActionEvent event) {
+    }
     
 }

@@ -1,96 +1,109 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package timefast;
 
+import java.io.IOException;
 import java.net.URL;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import modelo.dao.LoginDAO;
+import modelo.pojo.Colaborador;
+import modelo.pojo.respuestasPojos.RespuestaColaborador;
+import utils.Utilidades;
 
-
-public class FXMLInicioSesionController implements javafx.fxml.Initializable {
+/**
+ * FXML Controller class
+ *
+ * @author kevin
+ */
+public class FXMLInicioSesionController implements Initializable {
 
     @FXML
-    private TextField txtUsuario;
-
+    private TextField tfNumeroPersonal;
     @FXML
-    private PasswordField txtContrasena;
-
+    private PasswordField tfPassword;
     @FXML
-    private Button btnIniciarSesion;
+    private Label lbErrorNumeroPersonal;
+    @FXML
+    private Label lbErrorPassword;
 
+    private Colaborador colaborador;
+
+    /**
+     * Initializes the controller class.
+     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        btnIniciarSesion.setOnAction(event -> iniciarSesion());
+        // TODO
     }
 
-    private void iniciarSesion() {
-        String usuario = txtUsuario.getText();
-        String contrasena = txtContrasena.getText();
-
-        if (usuario.isEmpty() || contrasena.isEmpty()) {
-            mostrarAlerta("Error", "Por favor, ingrese el usuario y la contraseña.");
-            return;
-        }
-
-        try (Connection connection = obtenerConexion();
-             PreparedStatement statement = connection.prepareStatement(
-                     "SELECT * FROM usuarios WHERE usuario = ? AND contrasena = ?")) {
-
-            statement.setString(1, usuario);
-            statement.setString(2, contrasena);
-
-            ResultSet resultSet = statement.executeQuery();
-
-            if (resultSet.next()) {
-                mostrarAlerta("Éxito", "Inicio de sesión exitoso.");
-                abrirMenuPrincipal();
-            } else {
-                mostrarAlerta("Error", "Usuario o contraseña incorrectos.");
-            }
-
-        } catch (SQLException e) {
-            mostrarAlerta("Error", "No se pudo conectar a la base de datos: " + e.getMessage());
+    @FXML
+    private void iniciarSesion(ActionEvent event) {
+        String numeroPersonal = tfNumeroPersonal.getText();
+        String password = tfPassword.getText();
+        if (validarCampos(numeroPersonal, password)) {
+            verificarCredencialesSistema(numeroPersonal, password);
         }
     }
 
-    private void abrirMenuPrincipal() {
+    private boolean validarCampos(String numeroPersonal, String password) {
+        boolean camposValidos = true;
+        lbErrorNumeroPersonal.setText("");
+        lbErrorPassword.setText("");
+        if (numeroPersonal.isEmpty() || numeroPersonal.length() > 20) {
+            lbErrorNumeroPersonal.setText("Numero de personal no valido");
+            camposValidos = false;
+        }
+        if (password.isEmpty()) {
+            lbErrorPassword.setText("Contraseña no valida");
+            camposValidos = false;
+
+        }
+        return camposValidos;
+    }
+
+    private void irPantallaPrincipal() {
         try {
+
             FXMLLoader loader = new FXMLLoader(getClass().getResource("FXMLMenuPrincipal.fxml"));
-            Stage stage = new Stage();
-            stage.setScene(new Scene(loader.load()));
-            stage.setTitle("Menú Principal");
-            stage.show();
+            Parent root = loader.load();
+            FXMLMenuPrincipalController controlador = loader.getController();
+            controlador.inicializarValores(colaborador);
+            
+            Stage escenarioBase = (Stage) lbErrorPassword.getScene().getWindow();
+            Scene escenaPrincipal = new Scene(root);
+            escenarioBase.setScene(escenaPrincipal);
+            escenarioBase.setTitle("Menu Principal");
+        } catch (IOException ex) {
+            Utilidades.AletaSimple(Alert.AlertType.ERROR, ex + "Error al cambiar de pantalla", "Error");
+        }
 
-            // Cerrar la ventana de inicio de sesión
-            Stage ventanaActual = (Stage) btnIniciarSesion.getScene().getWindow();
-            ventanaActual.close();
+    }
 
-        } catch (Exception e) {
-            mostrarAlerta("Error", "No se pudo abrir el menú principal: " + e.getMessage());
+    private void verificarCredencialesSistema(String numeroPersonal, String password) {
+        RespuestaColaborador respuestaLogin = LoginDAO.iniciarSesion(numeroPersonal, password);
+
+        if (respuestaLogin.isError() == false) {
+            colaborador = respuestaLogin.getColaborador();
+            Utilidades.AletaSimple(Alert.AlertType.INFORMATION, "Bienvenido(a) al sistema de GymForte", "Time Fast");
+            irPantallaPrincipal();
+        } else {
+            Utilidades.AletaSimple(Alert.AlertType.ERROR, respuestaLogin.getContenido(), "Error");
         }
     }
 
-    private Connection obtenerConexion() throws SQLException {
-        String url = "jdbc:mysql://localhost:3306/tu_base_de_datos"; // Cambia esto
-        String usuario = "tu_usuario"; // Cambia esto
-        String contrasena = "tu_contrasena"; // Cambia esto
-        return DriverManager.getConnection(url, usuario, contrasena);
-    }
-
-    private void mostrarAlerta(String titulo, String mensaje) {
-        Alert alerta = new Alert(Alert.AlertType.INFORMATION);
-        alerta.setTitle(titulo);
-        alerta.setContentText(mensaje);
-        alerta.showAndWait();
-    }
 }

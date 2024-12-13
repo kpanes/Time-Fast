@@ -6,11 +6,13 @@
 package utils;
 
 import javafx.scene.control.Alert;
+
 /**
  *
- * @author kevin
+ * @author eduar
  */
 public class Utilidades {
+    
     public static void AletaSimple(Alert.AlertType tipo, String contenido, String titulo){  
         Alert alertaBienvenida = new Alert(tipo);
         alertaBienvenida.setTitle(titulo);

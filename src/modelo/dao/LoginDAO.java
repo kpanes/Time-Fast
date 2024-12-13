@@ -3,8 +3,8 @@ package modelo.dao;
 
 import java.net.HttpURLConnection;
 import modelo.ConexionHTTP;
-import modelo.pojo.RespuestaColaborador;
-import modelo.pojo.RespuestaHTTP;
+import modelo.pojo.respuestasPojos.RespuestaColaborador;
+import modelo.pojo.respuestasPojos.RespuestaHTTP;
 import utils.Constantes;
 import com.google.gson.Gson;
 

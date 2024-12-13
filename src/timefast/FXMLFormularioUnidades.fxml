@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="766.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="timefast.FXMLFormularioUnidadesController">
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="timefast.FXMLFormularioUnidadesController">
    <children>
-      <Pane prefHeight="766.0" prefWidth="775.0" style="-fx-background-color: beige;">
+      <Pane prefHeight="766.0" prefWidth="777.0" style="-fx-background-color: beige;">
          <children>
             <ImageView fitHeight="119.0" fitWidth="173.0" layoutX="315.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../media/unidad.jpg" />
+                  <Image url="@../../../Time-Fast-Escritorio/src/media/unidad.jpg" />
                </image>
             </ImageView>
             <Label layoutX="245.0" layoutY="41.0" text="FORMULARIO UNIDADES">
@@ -25,7 +26,8 @@
             <Label layoutX="249.0" layoutY="83.0" text="Gestiona las unidades de Time - Fast">
                <font>
                   <Font size="18.0" />
-               </font></Label>
+               </font>
+            </Label>
             <Label layoutX="55.0" layoutY="270.0" text="Marca" />
             <Label layoutX="52.0" layoutY="373.0" text="Modelo" />
             <Label layoutX="61.0" layoutY="487.0" text="Año" />
