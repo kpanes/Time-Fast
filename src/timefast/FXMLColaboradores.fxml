@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="685.0" prefWidth="946.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="timefast.FXMLColaboradoresController">
+   <children>
+      <Pane prefHeight="685.0" prefWidth="1094.0" style="-fx-background-color: moccasin;">
+         <children>
+            <Button layoutX="70.0" layoutY="180.0" mnemonicParsing="false" text="Agregar" />
+            <Button layoutX="169.0" layoutY="180.0" mnemonicParsing="false" text="Editar" />
+            <Button layoutX="251.0" layoutY="180.0" mnemonicParsing="false" text="Eliminar" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="498.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../media/colaborativo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="466.0" layoutY="37.0" text="COLABORADORES">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <TextField layoutX="70.0" layoutY="245.0" prefHeight="31.0" prefWidth="557.0" text="Busqueda filtrada" />
+            <Button layoutX="647.0" layoutY="245.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="103.0" text="Buscar" />
+            <TableView layoutX="60.0" layoutY="303.0" prefHeight="366.0" prefWidth="990.0">
+              <columns>
+                <TableColumn prefWidth="145.0" text="Nombre" />
+                <TableColumn prefWidth="138.0" text="Apellido Paterno" />
+                  <TableColumn prefWidth="142.0" text="Apellido Materno" />
+                  <TableColumn prefWidth="141.0" text="CURP" />
+                  <TableColumn prefWidth="147.0" text="Correo Electronico" />
+                  <TableColumn prefWidth="146.0" text="Password" />
+                  <TableColumn prefWidth="120.0" text="Rol" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
